@@ -27,7 +27,11 @@ load("../data/generated/sample.rda")
 ```
 
 
-# Motivation
+### Motivation
+
+-Rerpoduction, considered as meaningful and useful in the scientific community, becomes a hot topic and also on the rise. However, only a few studies could be reproduced directly. One of biggest issues is the lack of established reproducible workflows.
+
+-In doing so, I use the the Preston Curve as a case study. 
 
 ### The Preston Curve
 
@@ -144,6 +148,11 @@ cat(paste(latex_tab, collapse = "\n"))
 - The Preston Curve is alive and well! 
 - Have fun adjusting this template to fit your research needs
 - Consider contributing to its repository and promote Open Science!
+
+
+### Affirmation
+
+-This reproduced work is merely aimed at showing the reproducible workflow and does not focus on the underlying causality.
 
 
 

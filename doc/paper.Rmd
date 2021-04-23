@@ -64,6 +64,7 @@ The scientific community widely agrees that reproduction, defined as reproducing
 
 On the GitHub repository of the TRR 266 "Accounting for Transparency", we host and maintain a repository (https://github.com/trer) that implements a bare-bones reproducible workflow. This paper stub is included in the repo and can be reproduced in its entirely by running the code included in the repository.
 
+For beginners, it is a good practice to see how reproducing works. Hopefully, it can help those that try to make their work reproducible.
 
 # The Preston Curve as a Case Study
 

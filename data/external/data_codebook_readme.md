@@ -1,6 +1,6 @@
 ### Some Codebook Rules
 
-As said in 'data_readme.md', external data should always be accompanied by a data codebook. Data codebooks vary according to the nature of the data that they are subscribed. Normally, they a organized as a (nested) table with a row for each variable in the data and contain at least the following information
+As said in 'data_readme.md', external data should always be accompanied by a data codebook. Data codebooks vary according to the nature of the data that they are subscribed. Normally, they organized as a (nested) table with a row for each variable in the data and contain at least the following information
 
 - The variable name
 - A short explanatory label that can be used in tables etc.

@@ -58,7 +58,7 @@ tinytex::install_tinytex()
 # That's all!
 ```
 
-### OK. That was fun. Bot how should I use the repo now?
+### OK. That was fun. But how should I use the repo now?
 
 The basic idea is to clone the repository whenever you start a new project. If you are using GitHub, the simplest way to do this is to click on "Use this Template" above the file list. Then delete everything that you don't like and/or need. Over time, as you develop your own preferences, you can fork this repository and adjust it so that it becomes your very own template targeted to your very own preferences.
 

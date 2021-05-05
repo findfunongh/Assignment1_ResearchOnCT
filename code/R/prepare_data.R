@@ -33,8 +33,9 @@ smp_def$label <-  c(
   "Calendar Year",
   "National Income per Capita",
   "Unemployment (in \\%)",
-  "Life Expectancy (in years)",
-  "ln(National Income per Capita)", "Literacy rate (% of people ages 15 and above)
+  "Life Expectancy (in years)", 
+  "Literacy rate (% of people ages 15 and above)",
+  "ln(National Income per Capita)"
 )
 
 save(smp, smp_def, file = "data/generated/sample.rda")

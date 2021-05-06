@@ -29,9 +29,9 @@ tab_regression <-  prepare_regression_table(
   dvs = rep("life_expectancy", 4),
   idvs = list(
     c("ln_gdp_capita"),
-    c("ln_gdp_capita", "unemployment"),
-    c("ln_gdp_capita", "unemployment"),
-    c("ln_gdp_capita", "unemployment")
+    c("ln_gdp_capita", "unemployment", "literacy_rate"),
+    c("ln_gdp_capita", "unemployment", "literacy_rate"),
+    c("ln_gdp_capita", "unemployment","literacy_rate")
   ),
   feffects = list("", "", "year", c("country", "year")),
   cluster = list("", "",  "year", c("country", "year")),

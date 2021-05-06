@@ -93,7 +93,7 @@ fig_scatter
 ```
 
 ```{r tab_descriptives_sample, results="asis"}
-desc_rnames <- paste0("\\textit{", smp_def$label[7:9], "}")
+desc_rnames <- paste0("\\textit{", smp_def$label[7:10], "}")
 t <- tab_desc_stat
 rownames(t$df) <- desc_rnames
 names(t$df)[c(5,7)] <- c("25 \\%", "75 \\%")
@@ -135,8 +135,8 @@ cat(paste(latex_tab, collapse = "\n"))
 ``` {r CorrTable, results="asis"}
 tab <- tab_corr
 lat_tab <- unlist(strsplit(tab$kable_ret, "\n"))
-lat_tab[7:9] <- str_replace(
-  lat_tab[7:9], fixed(smp_def$var_name[8:10]), smp_def$label[8:10]
+lat_tab[7:10] <- str_replace(
+  lat_tab[7:9], fixed(smp_def$var_name[8:11]), smp_def$label[8:11]
 )
 lat_tab[4] <- "\\\\[-1.8ex]\\hline \\hline \\\\[-1.8ex]"
 lat_tab[6] <- "\\hline\\\\[-1.8ex]"
@@ -161,8 +161,8 @@ tab[12] <- paste(
 )
 esc_var_names <- str_replace_all(smp_def$var_name, fixed ("_"), "\\_")
 reg_names <- tibble(
-  var_name = esc_var_names[c(10, 8)],
-  label = smp_def$label[c(10, 8)]
+  var_name = esc_var_names[c(11, 8)],
+  label = smp_def$label[c(11, 8)]
 )
 for (i in c(15, 18)) {
   pos <- (i-12)/3

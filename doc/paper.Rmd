@@ -136,12 +136,12 @@ cat(paste(latex_tab, collapse = "\n"))
 tab <- tab_corr
 lat_tab <- unlist(strsplit(tab$kable_ret, "\n"))
 lat_tab[7:10] <- str_replace(
-  lat_tab[7:9], fixed(smp_def$var_name[8:11]), smp_def$label[8:11]
+  lat_tab[7:10], fixed(smp_def$var_name[8:11]), smp_def$label[8:11]
 )
 lat_tab[4] <- "\\\\[-1.8ex]\\hline \\hline \\\\[-1.8ex]"
 lat_tab[6] <- "\\hline\\\\[-1.8ex]"
-lat_tab[10] <- "\\\\[-1.8ex]\\hline \\hline \\\\[-1.8ex]"
-lat_tab[12] <- "\\begin{tablenotes}[flushleft] \\setlength{\\labelsep}{0pt} \\footnotetext"
+lat_tab[11] <- "\\\\[-1.8ex]\\hline \\hline \\\\[-1.8ex]"
+lat_tab[13] <- "\\begin{tablenotes}[flushleft] \\setlength{\\labelsep}{0pt} \\footnotetext"
 
 latex_tab <- c(
   "\\begin{table}[!htbp]",  
@@ -164,7 +164,7 @@ reg_names <- tibble(
   var_name = esc_var_names[c(11, 8)],
   label = smp_def$label[c(11, 8)]
 )
-for (i in c(15, 18)) {
+for (i in c(15, 18, 21)) {
   pos <- (i-12)/3
   tab[i] <- str_replace(
     tab[i], fixed(reg_names$var_name[pos]), reg_names$label[pos]
@@ -175,7 +175,7 @@ latex_tab <- c(
   "\\caption{\\label{tab:reg}Regressions}",
   "\\centering",
   "\\begin{tabular}{lcccc}",
-  tab[8:33],
+  tab[8:36],
   "\\end{tabular}",
   "\\end{table}"
 )

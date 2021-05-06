@@ -44,7 +44,7 @@ Preston (1975, p. 235)
 ### Data
 
 ```{r tab_descriptives_sample, results="asis"}
-desc_rnames <- paste0("\\textit{", smp_def$label[7:9], "}")
+desc_rnames <- paste0("\\textit{", smp_def$label[7:10], "}")
 t <- tab_desc_stat
 rownames(t$df) <- desc_rnames
 names(t$df)[c(5,7)] <- c("25 \\%", "75 \\%")
@@ -95,12 +95,12 @@ fig_scatter
 ``` {r CorrTable, results="asis"}
 tab <- tab_corr
 lat_tab <- unlist(strsplit(tab$kable_ret, "\n"))
-lat_tab[7:9] <- str_replace(
-  lat_tab[7:9], fixed(smp_def$var_name[8:10]), smp_def$label[8:10]
+lat_tab[7:10] <- str_replace(
+  lat_tab[7:10], fixed(smp_def$var_name[8:11]), smp_def$label[8:11]
 )
 lat_tab[4] <- "\\\\[-1.8ex]\\hline \\hline \\\\[-1.8ex]"
 lat_tab[6] <- "\\hline\\\\[-1.8ex]"
-lat_tab[10] <- "\\\\[-1.8ex]\\hline \\hline \\\\[-1.8ex]"
+lat_tab[11] <- "\\\\[-1.8ex]\\hline \\hline \\\\[-1.8ex]"
 latex_tab <- c(
   "\\begin{center}",
   "\\begin{tabular}{lccc}",
@@ -121,10 +121,10 @@ tab[12] <- paste(
 )
 esc_var_names <- str_replace_all(smp_def$var_name, fixed ("_"), "\\_")
 reg_names <- tibble(
-  var_name = esc_var_names[c(10, 8)],
-  label = smp_def$label[c(10, 8)]
+  var_name = esc_var_names[c(11, 8, 10)],
+  label = smp_def$label[c(11, 8, 10)]
 )
-for (i in c(15, 18)) {
+for (i in c(15, 18, 21)) {
   pos <- (i-12)/3
   tab[i] <- str_replace(
     tab[i], fixed(reg_names$var_name[pos]), reg_names$label[pos]
@@ -135,7 +135,7 @@ latex_tab <- c(
   "\\begin{center}",
   "\\resizebox*{!}{0.8\\textheight}{",
   "\\begin{tabular}{lcccc}",
-  tab[8:33],
+  tab[8:36],
   "\\end{tabular}}",
   "\\end{center}"
 )

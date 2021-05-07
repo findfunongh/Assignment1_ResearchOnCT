@@ -32,9 +32,9 @@ smp_def$label <-  c(
   "World Bank Income Group",
   "Calendar Year",
   "National Income per Capita",
+  "Literacy rate (% of people ages 15 and above)",
   "Unemployment (in \\%)",
   "Life Expectancy (in years)", 
-  "Literacy rate (% of people ages 15 and above)",
   "ln(National Income per Capita)"
 )
 

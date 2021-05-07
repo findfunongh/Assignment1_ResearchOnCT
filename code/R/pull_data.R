@@ -48,7 +48,7 @@ pull_worldbank_data <- function(vars) {
 
 message(sprintf("Pulling World Bank data: %s", Sys.time()))
 
-vars <- c("SP.DYN.LE00.IN", "NY.GDP.PCAP.KD", "SL.UEM.TOTL.ZS", "SE.ADT.LITR.ZS")
+vars <- c("NY.GDP.PCAP.KD", "SL.UEM.TOTL.ZS", "SP.DYN.LE00.IN", "SE.ADT.LITR.ZS")
 var_names <- c("gdp_capita", "unemployment", "life_expectancy", "literacy_rate")
 
 wb_list <- pull_worldbank_data(vars)

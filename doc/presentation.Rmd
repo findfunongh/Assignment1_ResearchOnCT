@@ -150,9 +150,10 @@ cat(paste(latex_tab, collapse = "\n"))
 - Consider contributing to its repository and promote Open Science!
 
 
+
 ### Affirmation
 
--This reproduced work is merely aimed at showing the reproducible workflow and does not focus on the underlying causality.
+This reproduced work is merely aimed at showing the reproducible workflow and does not focus on the underlying causality.
 
 
 

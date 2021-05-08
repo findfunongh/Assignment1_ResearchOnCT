@@ -103,7 +103,7 @@ lat_tab[6] <- "\\hline\\\\[-1.8ex]"
 lat_tab[11] <- "\\\\[-1.8ex]\\hline \\hline \\\\[-1.8ex]"
 latex_tab <- c(
   "\\begin{center}",
-  "\\begin{tabular}{lccc}",
+  "\\begin{tabular}{lcccc}",
   lat_tab[4:11],
   "\\end{tabular}",
   "\\end{center}"
